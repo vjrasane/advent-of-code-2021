@@ -13,3 +13,6 @@ export const getFile = (dir: string, file: string) => join(dir, file);
 
 export const getInputFile = (file: string) =>
   getFile(dirname(file), basename(file, ".ts") + ".input");
+
+export const getTestFile = (file: string) =>
+  getFile(dirname(file), "test.input");
